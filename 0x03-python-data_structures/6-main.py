@@ -6,7 +6,8 @@ matrix = [
     [4, 5, 6],
     [7, 8, 9]
 ]
+mat = [[]]
 
-print_matrix_integer(matrix)
+print_matrix_integer(mat)
 print("--")
 print_matrix_integer()
