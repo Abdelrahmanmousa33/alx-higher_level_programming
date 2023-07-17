@@ -92,7 +92,3 @@ class Rectangle(Base):
     """def to_dictionary(self):
         """Returns the dictionary representation of a Rectangle"""
         return self.__dict__"""
-
-
-if __name__ == "__main__":
-    unittest.main()
