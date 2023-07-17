@@ -15,6 +15,9 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
-
-if __name__ == "__main__":
-    unittest.main()
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """Return the JSON string of a list of dicts"""
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+        return json.dumps(list_dictionaries)
