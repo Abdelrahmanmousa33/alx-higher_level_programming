@@ -48,3 +48,7 @@ class Square(Rectangle):
                     self.x = v
                 if k == "y":
                     self.y = v
+
+
+if __name__ == "__main__":
+    unittest.main()

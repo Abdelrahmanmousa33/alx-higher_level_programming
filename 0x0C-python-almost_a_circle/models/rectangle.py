@@ -95,7 +95,7 @@ class Rectangle(Base):
             if lenth >= 2:
                 self.width = args[1]
             if lenth >= 3:
-                    self.height = args[2]
+                self.height = args[2]
             if lenth >= 4:
                 self.x = args[3]
             if lenth >= 5:
@@ -112,6 +112,11 @@ class Rectangle(Base):
                     self.x = v
                 if k == "y":
                     self.y = v
+
     def to_dictionary(self):
         """Returns the dictionary representation of a Rectangle"""
         return self.__dict__
+
+
+if __name__ == "__main__":
+    unittest.main()
