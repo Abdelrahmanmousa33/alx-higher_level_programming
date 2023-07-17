@@ -49,6 +49,11 @@ class Square(Rectangle):
                 if k == "y":
                     self.y = v
 
-
-if __name__ == "__main__":
-    unittest.main()
+    def to_dictionary(self):
+        """Return the dictionary representation of the Square."""
+        return {
+            "id": self.id,
+            "size": self.width,
+            "x": self.x,
+            "y": self.y
+        }
